@@ -87,12 +87,26 @@ fn main() {
 
         // ###################################### tuple
         // a fixed sized array of related data that can have diffrent types
-        let mut tup = ("Hello tuple" , 123 , 'A');
+        let tup = ("Hello tuple" , 123 , 'A');
 
-        tup.0 = "1111111111";
+        //how to access tuple values
+        let (a,b,c) = tup;
+        println!("{}",a);
 
-        println!("{}",tup.0);
+        //or
+        println!("{}" , tup.0);
 
+        // if the tuple was mutable you could change its values like this
+        // tup.0 = "another text";
+
+
+        // ###################################### array
+        // fixed size
+        let array1 = [100,200,300];
+        let a1 = array1[1];
+
+        // create an array with 8 values all set to 0
+        let array2 = [0; 8];
 
 
 

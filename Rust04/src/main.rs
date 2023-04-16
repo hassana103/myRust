@@ -83,7 +83,16 @@ fn main() {
 
 
         // ###################################################################################################
-        //
+        // Compound types - types that represent a group of values
+
+        // ###################################### tuple
+        // a fixed sized array of related data that can have diffrent types
+        let mut tup = ("Hello tuple" , 123 , 'A');
+
+        tup.0 = "1111111111";
+
+        println!("{}",tup.0);
+
 
 
 

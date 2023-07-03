@@ -31,8 +31,8 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
         // Create the request body as a JSON object
         let body = RequestBody {
-            phone: String::from("0987654321"),
-            national_code: String::from("1234567890"),
+            phone: String::from("#phone number"),
+            national_code: String::from("#national code"),
         };
         let json_body = json!({
             "phone": body.phone,
